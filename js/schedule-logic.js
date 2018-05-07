@@ -1,5 +1,5 @@
 // Initialize Firebase
-  var config = {
+var config = {
     apiKey: "AIzaSyA3KyPdMZaiXV7XXIPAxMdbkWy0IVcilC0",
     authDomain: "movie-scheduler.firebaseapp.com",
     databaseURL: "https://movie-scheduler.firebaseio.com",
