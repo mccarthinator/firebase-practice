@@ -1,2 +1,1 @@
-# DevMynd
-movie theatre scheduler!
+# Firebase database practice
