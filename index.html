@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<!--Import jQuery before materialize.js-->
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+<!--Import materialize.css and JS-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+<!-- firebase -->
+<script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+<!-- momentJS -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.21.0/moment.min.js"></script>
+<!--Import Google Icon Font-->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<!-- local CSS -->
+<link href="css/style.css" rel="stylesheet">
+
+<!--Let browser know website is optimized for mobile-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 text-center">
+                <h2 class="center" id="currentCode">Movie Scheduler</h2>
+                <hr>
+                <br>
+                    <div class="center">Enter a movie below to see its schedule options for 
+                        weekdays and weekends.
+                    </div>
+       
+            <div id="movieForm" class="row">
+                    <form class="col s12">
+                        <div class="row">
+                            <div class="input-field col s6">
+                                <input placeholder="'Liar Liar'" id="movieNameInput" type="text" class="validate">
+                                <label for="movieTitle">Movie Title</label>
+                            </div>
+                            <div class="input-field col s6">
+                                <input id="movieLengthInput" type="number" max= "180" min="45" class="validate">
+                                <label for="runtime">Run Time (total minutes)</label>
+                            </div>
+                        </div>
+                    </form>
+            </div>
+            
+            <button id="addMovieButton" class="btn waves-effect waves-light" type="submit" name="action">submit
+                    <i class="material-icons right">send</i>
+            </button>
+
+            
+            <!-- results div -->
+            <br>
+            <br>
+            <h3 class="center-align">Movie Schedule</h3>
+            <div class="center-align" id="movieLengthResult">
+            </div>
+                            
+
+            <div class="center-align">
+                <a id="clearResultsBtn" class="waves-effect waves-light btn">Clear Results</a>
+            </div>
+
+<!-- local JS -->
+<script type="text/javascript" src="js/schedule-logic.js"></script>
+
+</body>
+  </html>
